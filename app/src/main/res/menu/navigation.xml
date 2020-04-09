@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/icon_huanqiu"
+        android:title="环球" />
+
+    <item
+        android:id="@+id/navigation_shangji"
+        android:icon="@mipmap/icon_shangji"
+        android:title="商机" />
+
+    <item
+        android:id="@+id/navigation_shangcheng"
+        android:icon="@mipmap/icon_shangchen"
+        android:title="商城" />
+    <item
+        android:id="@+id/navigation_zunxiang"
+        android:icon="@mipmap/icon_zunxiang"
+        android:title="尊享" />
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@mipmap/icon_me"
+        android:title="我的" />
+</menu>
