@@ -1,4 +1,4 @@
-package com.yping.functiontools;
+package com.yping.functiontools.adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-class TitleFragmentPagerAdapter extends FragmentPagerAdapter {
+public class TitleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     /**
      * The m fragment list.
@@ -46,7 +46,7 @@ class TitleFragmentPagerAdapter extends FragmentPagerAdapter {
      * 描述：获取数量.
      *
      * @return the count
-     * @see android.support.v4.view.PagerAdapter#getCount()
+     * @see androidx.core.view.PagerAdapter#getCount()
      */
     @Override
     public int getCount() {
@@ -58,7 +58,7 @@ class TitleFragmentPagerAdapter extends FragmentPagerAdapter {
      *
      * @param position the position
      * @return the item
-     * @see android.support.v4.app.FragmentPagerAdapter#getItem(int)
+     * @see androidx.core.app.FragmentPagerAdapter#getItem(int)
      */
     @Override
     public Fragment getItem(int position) {

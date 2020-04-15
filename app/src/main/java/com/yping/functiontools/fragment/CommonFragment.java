@@ -12,18 +12,22 @@ import androidx.fragment.app.Fragment;
 
 import com.yping.functiontools.R;
 
+import butterknife.BindView;
+
 public class CommonFragment extends Fragment {
+    @BindView(R.id.tv_title)
+    TextView tvTitle;
     private String value1, value2;
     private View view;
-    private TextView tvTitle;
+    private static final String KEY = "title";
 
     public static CommonFragment newInstance(String s, String s1) {
         Bundle args = new Bundle();
-        args.putString("value1", s);
+        args.putString(KEY, s);
         args.putString("value2", s1);
         CommonFragment fragment = new CommonFragment();
         fragment.setArguments(args);
-        return null;
+        return fragment;
     }
 
     @Nullable
@@ -40,15 +44,15 @@ public class CommonFragment extends Fragment {
         super.onCreate(savedInstanceState);
         Bundle args = getArguments();
         if (args != null) {
-            value1 = args.getString("value1");
+            value1 = args.getString(KEY);
             value2 = args.getString("value2");
         }
 
-        initData();
     }
 
     private void initView(View view) {
         tvTitle = view.findViewById(R.id.tv_title);
+        initData();
     }
 
     private void initData() {
