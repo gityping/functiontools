@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         fragments.add(new ToolsFragment());
         fragments.add(new SocialFragment());
         fragments.add(new MineFragment());
-        TitleFragmentPagerAdapter adapter = new TitleFragmentPagerAdapter(getSupportFragmentManager(), fragments, new String[]{"环球", "商机", "商城", "尊享", "我的"});
+        TitleFragmentPagerAdapter adapter = new TitleFragmentPagerAdapter(getSupportFragmentManager(), fragments, new String[]{"首页", "功能", "工具", "社区", "我的"});
         viewpager.setAdapter(adapter);
 
         tabLayout.setupWithViewPager(viewpager);

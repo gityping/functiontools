@@ -4,4 +4,14 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="tab_background">#ff9</color>
+
+    <color name="baseColor">#666999</color>
+    <color name="bgColor">#aa666999</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="transplant">#00000000</color>
+    <color name="colorLine">#f1f1f1</color>
+    <color name="textColor6">#666666</color>
+    <color name="textColor9">#999999</color>
 </resources>
